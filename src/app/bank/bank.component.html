@@ -1,0 +1,33 @@
+<p>registration works!</p>
+<p>registartion works!</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+            <form class="form-horizontal" role="form">
+                <h2>BANK DETAILS</h2>
+                <div class="form-group">
+                    <label for="Name" class="col-sm-3 control-label">BANK Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="bankType" [(ngModel)] = "bank.bankType" placeholder="BANK NAME" name="bankType"  autofocus>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="ifscCode" class="col-sm-3 control-label"> IFSCCODE </label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="ifscCode" [(ngModel)] = "bank.ifscCode" placeholder="IFSCCode"  name= "ifscCode">
+                    </div>
+                </div>
+                <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="bankDetail()">
+            </form> <!-- /form -->
+        </div> 
+        

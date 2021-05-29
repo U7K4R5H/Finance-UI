@@ -1,0 +1,12 @@
+<button (click)='findAllProducts()'>Find Products</button>
+
+<table border=15  >
+  <tr *ngFor ="let myProd of tempProd">
+      
+      <td>  <img src = "{{ myProd.imageUrl }}" style="width: 200px; height: 150px"/>    </td>
+
+      <td >            {{myProd.productName}}         </td>         
+      <td >            {{myProd.productPrice}}         </td>
+      <td >          <button (click)="buyNow(myProd)"> Buy Now  </button>          </td>
+    </tr>
+</table>

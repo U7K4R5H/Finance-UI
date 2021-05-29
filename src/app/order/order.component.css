@@ -1,0 +1,29 @@
+/* table{
+    margin: auto;
+}
+td{
+    font-size: 18px;
+    padding: 4px;
+    text-align: center;
+}
+tr{
+    margin: 2px;
+} */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+    font-size: 18px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    font-size: 18px;
+  }

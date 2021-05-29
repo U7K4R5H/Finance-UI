@@ -1,0 +1,27 @@
+<!-- enter order id<input  [(ngModel)]="order">
+<button (click)='findOrder(order)'>Find Order</button> 
+<table border=15>
+    <tr >
+        <td >            {{temporder.orderDate}}         </td>         
+        <td >            {{temporder.emiMonths}}         </td>
+    </tr>
+  </table> -->
+  <label>card no</label> 
+  <input  [(ngModel)]="cardNo" disabled>
+  <button (click)='findOrderByCard(cardNo)' disabled>Find order</button>
+  <table border=2>
+    <tr><th>OrderId</th><th>OrderDate</th><th>Emi Months</th><th>EmiPerMonth</th><th>Quantity</th><th>RemainingAmount</th>
+    <th> TotalCost</th></tr>
+    <tr *ngFor="let myOrd of tempcard"> 
+
+      <td >          {{myOrd.ordId}}     </td>
+      <td >          {{myOrd.orderDate}} </td>   
+      <td >          {{myOrd.emiMonths}} </td>   
+      <td >          {{myOrd.emiPerMonth}} </td>   
+      <td >          {{myOrd.quantity}} </td>   
+      <td >          {{myOrd.remainingAmount}} </td>   
+      <td >          {{myOrd.totalCost}} </td>   
+        
+          <!-- <td >            {{tempcard.emiMonths}}         </td> -->
+      </tr>
+  </table>

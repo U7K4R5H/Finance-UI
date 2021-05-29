@@ -1,0 +1,62 @@
+  <head>
+    <title>HTML Table</title>
+    <style>
+    .center{
+      margin-left:auto;
+      margin-right:auto;
+    }
+   </style>
+  </head>
+  <body>
+ <p align="right">
+   <a routerLink="/registration">Register </a> 
+   <a routerLink="/login">Login </a>
+   
+  </p>
+ 
+ <br>
+ <hr>
+ <br>
+ <br>
+
+
+ <table border=5 class="center">
+  <tr > 
+    <td> <img src="assets\Images\iphone.jpg" width="200" height="200"> </td>
+       <div >
+         <h2>New Apple iPhone 12 Pro Max </h2>
+         <h3>(128GB) - Pacific Blue</h3>
+         <ul>
+           <li>6.7-inch (17 cm diagonal) Super Retina XDR display</li>
+           <li>Ceramic Shield, tougher than any smartphone glass</li>
+           <li>Pro camera system with 12MP Ultra Wide</li>
+         </ul>
+         <button (click)="buyNow()"> Buy Now  </button>
+       </div>
+   </tr>
+</table>
+
+<table border=5 class="center">
+  <tr > 
+    <td> <img src="assets\Images\LG TV.jpg" width="200" height="200"> </td>
+       <div >
+         <h2>LG 108 cm (43 inches) </h2>
+         <h3>4K Ultra HD Smart LED TV 43UM7290PTF (Ceramic Black)</h3>
+         <ul>
+           <li>Resolution: 4K Ultra HD (3840x2160) </li>
+           <li>Connectivity: 3 HDMI ports to connect set top box</li>
+           <li>Sound : 20 Watts Output</li>
+         </ul>
+         <button (click)="buyNow()"> Buy Now  </button>
+       </div>
+   </tr>
+</table>
+ <br>
+ <br>
+ <br>
+ &ensp; &ensp; <p> ELIGIBILITY </p>
+ <p align="center" ><u> Terms and Conditions </u></p>
+ &ensp;  <p> Charges for registration and </p>
+   <p>EMI card details </p>
+   <router-outlet></router-outlet>
+   
